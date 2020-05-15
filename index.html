@@ -22,9 +22,9 @@
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
       // start flex
-          {
+         {
   "type": "flex",
-  "altText": "MENU",
+  "altText": "Flex Message",
   "contents": {
     "type": "carousel",
     "contents": [
@@ -35,7 +35,7 @@
           "url": "https://static.wixstatic.com/media/e5c721_aa4c0873eeea46af94b4b7bf302464e9~mv2.jpg",
           "size": "full",
           "aspectRatio": "1:1",
-          "aspectMode": "cover",
+          "aspectMode": "cover"
         },
         "body": {
           "type": "box",
@@ -87,6 +87,7 @@
               "type": "text",
               "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง",
               "size": "xxs",
+              "align": "center",
               "color": "#AAAAAA",
               "wrap": true
             }
@@ -180,6 +181,7 @@
               "type": "text",
               "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง",
               "size": "xxs",
+              "align": "center",
               "color": "#AAAAAA",
               "wrap": true
             }
@@ -266,6 +268,7 @@
               "type": "text",
               "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง กทม และ ปริมณฑล",
               "size": "xxs",
+              "align": "center",
               "color": "#AAAAAA",
               "wrap": true
             }
@@ -352,6 +355,7 @@
               "type": "text",
               "text": "🚗 สามารถจัดส่งได้ทั่วประเทศ",
               "size": "xxs",
+              "align": "center",
               "color": "#AAAAAA",
               "wrap": true
             }
@@ -439,6 +443,7 @@
               "type": "text",
               "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง",
               "size": "xxs",
+              "align": "center",
               "color": "#AAAAAA",
               "wrap": true
             }
@@ -497,6 +502,7 @@
               "type": "text",
               "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง กทม และ ปริมณฑล",
               "size": "xxs",
+              "align": "center",
               "color": "#AAAAAA",
               "wrap": true
             }
@@ -555,6 +561,7 @@
               "type": "text",
               "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง กทม และ ปริมณฑล",
               "size": "xxs",
+              "align": "center",
               "color": "#AAAAAA",
               "wrap": true
             }
@@ -619,8 +626,86 @@
               "type": "text",
               "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง",
               "size": "xxs",
+              "align": "center",
               "color": "#AAAAAA",
               "wrap": true
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "xxl",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "image",
+                  "url": "https://gwangraindear.github.io/LiffMenu2/img/space,jpg",
+                  "aspectRatio": "3:4"
+                },
+                {
+                  "type": "text",
+                  "text": "เค้กปอนด์-วันเกิด",
+                  "size": "xl",
+                  "align": "center",
+                  "weight": "bold",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "button",
+                  "action": {
+                    "type": "uri",
+                    "label": "ราคา",
+                    "uri": "https://liff.line.me/1654167548-NvyrPjaE"
+                  },
+                  "color": "#C1E550",
+                  "margin": "sm",
+                  "height": "sm",
+                  "style": "primary"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "button",
+                  "action": {
+                    "type": "uri",
+                    "label": "ตัวอย่าง",
+                    "uri": "http://shorturl.at/DJKMO"
+                  },
+                  "color": "#3DC79D",
+                  "margin": "sm",
+                  "height": "sm",
+                  "style": "primary"
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "สั่งล่วงหน้าอย่างน้อย 3 วัน",
+                  "size": "sm",
+                  "align": "center"
+                }
+              ]
             }
           ]
         }
