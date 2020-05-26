@@ -22,7 +22,7 @@
       if (liff.getContext().type !== "none") {
         await liff.sendMessages([
       // start flex
-         {
+  {
   "type": "flex",
   "altText": "เมนูหลัก",
   "contents": {
@@ -513,6 +513,64 @@
         "type": "bubble",
         "hero": {
           "type": "image",
+          "url": "https://static.wixstatic.com/media/e5c721_b0c955d2cbf9431c981440207624ea9a~mv2.jpeg",
+          "size": "full",
+          "aspectRatio": "1:1",
+          "aspectMode": "cover"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "md",
+          "contents": [
+            {
+              "type": "text",
+              "text": "เรดเวลเวท",
+              "size": "xl",
+              "weight": "bold"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "฿35",
+                      "flex": 0,
+                      "margin": "sm",
+                      "weight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "text": "1กล่อง",
+                      "size": "sm",
+                      "align": "end",
+                      "color": "#AAAAAA"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง",
+              "size": "xxs",
+              "align": "center",
+              "color": "#AAAAAA",
+              "wrap": true
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
           "url": "https://static.wixstatic.com/media/e5c721_321fad5b516d47628884151bc43379ac~mv2.jpeg",
           "size": "full",
           "aspectRatio": "1:1",
@@ -560,71 +618,6 @@
             {
               "type": "text",
               "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง กทม และ ปริมณฑล",
-              "size": "xxs",
-              "align": "center",
-              "color": "#AAAAAA",
-              "wrap": true
-            }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://static.wixstatic.com/media/e5c721_2227c7a742a54e2cbde25a86a5ab39b1~mv2.jpeg",
-          "size": "full",
-          "aspectRatio": "1:1",
-          "aspectMode": "cover"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "md",
-          "contents": [
-            {
-              "type": "text",
-              "text": "ปังโทสต์",
-              "size": "xl",
-              "align": "center",
-              "weight": "bold"
-            },
-            {
-              "type": "text",
-              "text": "[ ใบเตย | ชานม ]",
-              "align": "center",
-              "color": "#613A28"
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "sm",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "baseline",
-                  "contents": [
-                    {
-                      "type": "text",
-                      "text": "฿60",
-                      "flex": 0,
-                      "margin": "sm",
-                      "weight": "bold"
-                    },
-                    {
-                      "type": "text",
-                      "text": "1ชิ้น",
-                      "size": "sm",
-                      "align": "end",
-                      "color": "#AAAAAA"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": "🚗 สามารถจัดส่ง สฎ จังหวัดใกล้เคียง",
               "size": "xxs",
               "align": "center",
               "color": "#AAAAAA",
@@ -726,7 +719,7 @@
         if (liff.isLoggedIn()) {
          // getContext()
          // alert("is log in")
-          setTimeout(sendMsg(),1000)
+          setTimeout(sendMsg(),100)
           
         } else {
           liff.login()
